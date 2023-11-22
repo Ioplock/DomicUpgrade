@@ -3,7 +3,7 @@
     --background-second: #242632;
     --shadow-color: #191c22;
     --acent-color: #952dff;
-    --light-acent-color: #a9a9a9;
+    --light-acent-color: #c48aff;
     --dark-acent-color: #5f1fa1;
     --text-color: #d6dae3;
 }
@@ -45,7 +45,7 @@ b {
     font-size: 1.2em;
 }
 
-h1, h2, h3, h4, h5, h6, p, div {
+h1, h2, h3, h4, h5, h6, p, div, td {
     color: var(--text-color);
 }
 
@@ -78,7 +78,7 @@ p + p {
     margin-top: 0px;
 }
 
-a {
+a, a.done {
   color: var(--light-acent-color);
   text-decoration: none;
 }
@@ -86,4 +86,17 @@ a {
 a:hover {
   color: var(--text-color);
   text-decoration: underline;
+}
+
+div.study-entity-list {
+    color: white;
+}
+
+td:nth-child(4) {
+    color: var(--acent-color) !important;
+}
+
+iframe {
+    display: none;
+    position: absolute;
 }
