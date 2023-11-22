@@ -2,6 +2,7 @@
     --background-dark: #1F2229;
     --background-second: #242632;
     --shadow-color: #191c22;
+    --acent-simular-color: #510FAD;
     --acent-color: #952dff;
     --light-acent-color: #c48aff;
     --dark-acent-color: #5f1fa1;
@@ -99,4 +100,21 @@ td:nth-child(4) {
 iframe {
     display: none;
     position: absolute;
+}
+
+span.learning-level-bottom-border, span.learning-level-top-border {
+    border-color: var(--background-dark);
+    border-width: 1px;
+}
+
+.learning-level-student {
+    background-color: var(--acent-color);
+}
+
+.learning-level-min-max {
+    background-color: var(--acent-simular-color);
+}
+
+.learning-level-average {
+    background-color: var(--light-acent-color);
 }
